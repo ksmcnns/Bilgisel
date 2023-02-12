@@ -141,19 +141,7 @@ namespace Bilgisel
         }
         private void isCorrectAnswer(List<string> options)
         {
-            //string soru = label5.Text;
-            //string a = buttonA.Text;
-            //string b = buttonB.Text;
-            //string c = buttonC.Text;
-            //string d = buttonD.Text;
-            //string sql = "select Cevap where Id=" + 1;
-            //string cevap = sql;
-            //SqlConnection connection = new SqlConnection("Data Source=DESKTOP-K6L0EDQ;Initial Catalog=BilgiselDB;Integrated Security=True");
-            //SqlCommand cmd = new SqlCommand(sql, connection);
-            //connection.Open();
-            //// cmd.ExecuteNonQuery();
-            //connection.Close();
-
+           
                 if (options[4] == options[0] && button1WasClicked)
                 {
                     buttonA.BackColor = Color.Green;
@@ -234,35 +222,6 @@ namespace Bilgisel
                     buttonC.Enabled = false;
                     buttonD.Enabled = false;
                 }
-
-            //else if(cevap != a && buttonAWasClicked)
-            //{
-            //    buttonA.BackColor = Color.Red;
-            //    buttonB.Enabled = false;
-            //    buttonC.Enabled = false;
-            //    buttonD.Enabled = false;
-            //}
-            //else if (cevap != b && buttonBWasClicked)
-            //{
-            //    buttonB.BackColor = Color.Red;
-            //    buttonA.Enabled = false;
-            //    buttonC.Enabled = false;
-            //    buttonD.Enabled = false;
-            //}
-            //else if (cevap != c && buttonCWasClicked)
-            //{
-            //    buttonC.BackColor = Color.Red;
-            //    buttonB.Enabled = false;
-            //    buttonA.Enabled = false;
-            //    buttonD.Enabled = false;
-            //}
-            //else
-            //{
-            //    buttonD.BackColor = Color.Red;
-            //    buttonB.Enabled = false;
-            //    buttonA.Enabled = false;
-            //    buttonC.Enabled = false;
-            //}
         }
         private void button1_Click(object sender, EventArgs e)
             {
