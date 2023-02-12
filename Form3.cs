@@ -23,14 +23,14 @@ namespace Bilgisel
             int num;
             if (x == 2 || x==4)
             {
-                 num = Convert.ToInt32(textBox9.Text);
+                 num = Convert.ToInt32(textBox10.Text);
             }
             else            
-                num = Convert.ToInt32(textBox15.Text);
+                num = Convert.ToInt32(textBox17.Text);
                         
             return num;
         }
-        private void button1_Click(object sender, EventArgs e) //Ekle Butonu
+        private void button1_Click(object sender, EventArgs e) 
         {
             string qstn = textBox1.Text;
             string a = textBox2.Text;
@@ -48,8 +48,8 @@ namespace Bilgisel
             textBox7.Text = " ";
            // textBox22.Text = " ";
             MessageBox.Show("Kayıt Başarıyla Eklendi.");
-        }
-        private void button2_Click(object sender, EventArgs e) // Güncelle Butonu
+        }// Insert Button
+        private void button2_Click(object sender, EventArgs e) 
         {
             int x = 2;
             int id = getId(x);
@@ -67,8 +67,8 @@ namespace Bilgisel
             textBox10.Text = " ";
             textBox8.Text = " ";
             MessageBox.Show("Kayıt Başarıyla Güncellendi.");
-        }
-        private void button3_Click(object sender, EventArgs e) // Sil Sayfası için veri getiren buton 
+        } // Update Button
+        private void button3_Click(object sender, EventArgs e) 
         {
             int x = 3;
             DataTable dt = new DataTable();
@@ -88,9 +88,9 @@ namespace Bilgisel
                 textBox6.Text = dt.Rows[0][6].ToString();
             }
             connection.Close();
-        }
+        }// Data fetching button for Delete Page 
 
-        private void button4_Click(object sender, EventArgs e) // Güncelle sayfası için veri getiren buton
+        private void button4_Click(object sender, EventArgs e) 
         {
             int x = 4;
             DataTable dt = new DataTable();
@@ -110,7 +110,7 @@ namespace Bilgisel
                 textBox8.Text = dt.Rows[0][6].ToString();
             }
             connection.Close();
-        }        
+        }// Data fetching button for Update Page       
         private void button5_Click(object sender, EventArgs e) // Sil Butonu
         {
             string qstn = textBox20.Text;
@@ -119,7 +119,7 @@ namespace Bilgisel
             string c = textBox17.Text;
             string d = textBox16.Text;
             string answ = textBox6.Text;
-            int newId = Convert.ToInt32(textBox15.Text);
+            int newId = Convert.ToInt32(textBox17.Text);
             dbo.deleteQuestion(qstn, a, b, c, d, answ, newId);
             textBox20.Text = " ";
             textBox19.Text = " ";
@@ -129,7 +129,7 @@ namespace Bilgisel
             textBox15.Text = " ";
             textBox6.Text = " ";
             MessageBox.Show("Kayıt Başarıyla Silindi.");
-        }
+        }// Delete Button
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
             DataSet results = dbo.displayQuestions();
