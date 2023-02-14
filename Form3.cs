@@ -14,6 +14,7 @@ namespace Bilgisel
     public partial class Form3 : Form
     {
         DBOperations dbo = new DBOperations();
+        Form1 frm1 = new Form1();
         public Form3()
         {
             InitializeComponent();
@@ -136,6 +137,11 @@ namespace Bilgisel
             dataGridView1.DataSource = results.Tables[0];
             if (results.Tables[0].Rows.Count == 0)
                 MessageBox.Show("Kayıt Yok");
+        }
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            frm1.Show();
         }
     }
 }

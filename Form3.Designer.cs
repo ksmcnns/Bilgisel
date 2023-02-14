@@ -45,15 +45,13 @@ namespace Bilgisel
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.textBox14 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
@@ -64,10 +62,12 @@ namespace Bilgisel
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label6 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.textBox16 = new System.Windows.Forms.TextBox();
@@ -80,8 +80,9 @@ namespace Bilgisel
             this.label18 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button6 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -279,6 +280,35 @@ namespace Bilgisel
             this.tabPage2.Text = "Soru Güncelle";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label20.Location = new System.Drawing.Point(735, 84);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(176, 25);
+            this.label20.TabIndex = 33;
+            this.label20.Text = "Soru getire tıklayın.";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label19.Location = new System.Drawing.Point(735, 49);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(268, 25);
+            this.label19.TabIndex = 32;
+            this.label19.Text = "Güncellemek için soru ID girin";
+            // 
+            // textBox14
+            // 
+            this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox14.Location = new System.Drawing.Point(132, 35);
+            this.textBox14.Multiline = true;
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(571, 267);
+            this.textBox14.TabIndex = 31;
+            // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -289,85 +319,6 @@ namespace Bilgisel
             this.button4.Text = "Soru Getir";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(739, 403);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(223, 48);
-            this.button2.TabIndex = 25;
-            this.button2.Text = "Güncelle";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.label6);
-            this.tabPage3.Controls.Add(this.textBox6);
-            this.tabPage3.Controls.Add(this.label9);
-            this.tabPage3.Controls.Add(this.button3);
-            this.tabPage3.Controls.Add(this.button5);
-            this.tabPage3.Controls.Add(this.textBox15);
-            this.tabPage3.Controls.Add(this.label15);
-            this.tabPage3.Controls.Add(this.textBox16);
-            this.tabPage3.Controls.Add(this.textBox17);
-            this.tabPage3.Controls.Add(this.textBox18);
-            this.tabPage3.Controls.Add(this.textBox19);
-            this.tabPage3.Controls.Add(this.textBox20);
-            this.tabPage3.Controls.Add(this.label16);
-            this.tabPage3.Controls.Add(this.label17);
-            this.tabPage3.Controls.Add(this.label18);
-            this.tabPage3.Controls.Add(this.label21);
-            this.tabPage3.Controls.Add(this.label22);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1060, 511);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Soru Sil";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button3.Location = new System.Drawing.Point(760, 213);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(223, 49);
-            this.button3.TabIndex = 45;
-            this.button3.Text = "Soru Getir";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button5
-            // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button5.Location = new System.Drawing.Point(760, 401);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(224, 48);
-            this.button5.TabIndex = 41;
-            this.button5.Text = "Sil";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.dataGridView1);
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1060, 511);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Soruları Görüntüle";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(788, 353);
-            this.dataGridView1.TabIndex = 0;
             // 
             // textBox8
             // 
@@ -384,9 +335,20 @@ namespace Bilgisel
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label8.Location = new System.Drawing.Point(732, 268);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(193, 39);
+            this.label8.Size = new System.Drawing.Size(186, 38);
             this.label8.TabIndex = 26;
             this.label8.Text = "Yeni Cevap";
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button2.Location = new System.Drawing.Point(739, 403);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(223, 48);
+            this.button2.TabIndex = 25;
+            this.button2.Text = "Güncelle";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox9
             // 
@@ -483,34 +445,41 @@ namespace Bilgisel
             this.label14.TabIndex = 15;
             this.label14.Text = "Soru";
             // 
-            // textBox14
+            // tabPage3
             // 
-            this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox14.Location = new System.Drawing.Point(132, 35);
-            this.textBox14.Multiline = true;
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(571, 267);
-            this.textBox14.TabIndex = 31;
+            this.tabPage3.Controls.Add(this.label6);
+            this.tabPage3.Controls.Add(this.textBox6);
+            this.tabPage3.Controls.Add(this.label9);
+            this.tabPage3.Controls.Add(this.button3);
+            this.tabPage3.Controls.Add(this.button5);
+            this.tabPage3.Controls.Add(this.textBox15);
+            this.tabPage3.Controls.Add(this.label15);
+            this.tabPage3.Controls.Add(this.textBox16);
+            this.tabPage3.Controls.Add(this.textBox17);
+            this.tabPage3.Controls.Add(this.textBox18);
+            this.tabPage3.Controls.Add(this.textBox19);
+            this.tabPage3.Controls.Add(this.textBox20);
+            this.tabPage3.Controls.Add(this.label16);
+            this.tabPage3.Controls.Add(this.label17);
+            this.tabPage3.Controls.Add(this.label18);
+            this.tabPage3.Controls.Add(this.label21);
+            this.tabPage3.Controls.Add(this.label22);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(1060, 511);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Soru Sil";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // label19
+            // label6
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label19.Location = new System.Drawing.Point(735, 49);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(268, 25);
-            this.label19.TabIndex = 32;
-            this.label19.Text = "Güncellemek için soru ID girin";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label20.Location = new System.Drawing.Point(735, 84);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(176, 25);
-            this.label20.TabIndex = 33;
-            this.label20.Text = "Soru getire tıklayın.";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Location = new System.Drawing.Point(754, 98);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(176, 25);
+            this.label6.TabIndex = 50;
+            this.label6.Text = "Soru getire tıklayın.";
             // 
             // textBox6
             // 
@@ -520,6 +489,38 @@ namespace Bilgisel
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(571, 267);
             this.textBox6.TabIndex = 48;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.Location = new System.Drawing.Point(754, 63);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(213, 25);
+            this.label9.TabIndex = 49;
+            this.label9.Text = "Silmek için soru ID girin";
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button3.Location = new System.Drawing.Point(760, 213);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(223, 49);
+            this.button3.TabIndex = 45;
+            this.button3.Text = "Soru Getir";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button5.Location = new System.Drawing.Point(760, 401);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(224, 48);
+            this.button5.TabIndex = 41;
+            this.button5.Text = "Sil";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // textBox15
             // 
@@ -536,7 +537,7 @@ namespace Bilgisel
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label15.Location = new System.Drawing.Point(752, 277);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(193, 39);
+            this.label15.Size = new System.Drawing.Size(186, 38);
             this.label15.TabIndex = 45;
             this.label15.Text = "Yeni Cevap";
             // 
@@ -635,31 +636,43 @@ namespace Bilgisel
             this.label22.TabIndex = 34;
             this.label22.Text = "Soru";
             // 
-            // label6
+            // tabPage4
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(754, 98);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(176, 25);
-            this.label6.TabIndex = 50;
-            this.label6.Text = "Soru getire tıklayın.";
+            this.tabPage4.Controls.Add(this.dataGridView1);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(1060, 511);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Soruları Görüntüle";
+            this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // label9
+            // dataGridView1
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(754, 63);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(213, 25);
-            this.label9.TabIndex = 49;
-            this.label9.Text = "Silmek için soru ID girin";
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(1060, 508);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button6.Location = new System.Drawing.Point(924, 12);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(178, 49);
+            this.button6.TabIndex = 2;
+            this.button6.Text = "Ana Sayfa\r\n";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1166, 619);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form3";
             this.Text = "Form3";
@@ -731,5 +744,6 @@ namespace Bilgisel
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Button button6;
     }
 }

@@ -31,14 +31,9 @@ namespace Bilgisel
         private bool button4WasClicked = false;
         private bool timer = false;
 
-        private bool waitASecond()
+        private async void waitASecond()
         {
-            timer1.Start();
-            string time = timer1.ToString();
-            if (time == "1")
-                return true;
-            else
-                return false;
+            await Task.Delay(2000);        
         }
         private void SetButtonAWasClicked(bool set)
         {
@@ -139,83 +134,107 @@ namespace Bilgisel
             int count = dt.Rows.Count;
             return count;
         }
+
+        private void refreshScreen(int x)
+        {
+            if(x==0)
+            {
+                buttonA.BackColor = Color.Silver;
+                buttonB.Enabled = true;
+                buttonC.Enabled = true;
+                buttonD.Enabled = true;
+            }
+            else if(x==1)
+            {
+                buttonB.BackColor = Color.Silver;
+                buttonA.Enabled = true;
+                buttonC.Enabled = true;
+                buttonD.Enabled = true;
+            }
+            else if(x==2)
+            {
+                buttonC.BackColor = Color.Silver;
+                buttonB.Enabled = true;
+                buttonA.Enabled = true;
+                buttonD.Enabled = true;
+            }
+            else
+            {
+                buttonD.BackColor = Color.Silver;
+                buttonB.Enabled = true;
+                buttonC.Enabled = true;
+                buttonA.Enabled = true;
+            }
+        }
         private void isCorrectAnswer(List<string> options)
         {
-           
-                if (options[4] == options[0] && button1WasClicked)
+             if (options[4] == options[0] && button1WasClicked)
                 {
                     buttonA.BackColor = Color.Green;
                     buttonB.Enabled = false;
                     buttonC.Enabled = false;
                     buttonD.Enabled = false;
                     i++;
+                    waitASecond();                 
                     printQuestion();
-                    buttonA.BackColor = Color.Silver;
-                    buttonB.Enabled = true;
-                    buttonC.Enabled = true;
-                    buttonD.Enabled = true;
+                    refreshScreen(0);                                
                 }
-                else if (options[4] == options[1] && button2WasClicked)
+             else if (options[4] == options[1] && button2WasClicked)
                 {
                     buttonB.BackColor = Color.Green;
                     buttonD.Enabled = false;
                     buttonC.Enabled = false;
                     buttonA.Enabled = false;
                     i++;
+                    waitASecond();              
                     printQuestion();
-                    buttonB.BackColor = Color.Silver;
-                    buttonA.Enabled = true;
-                    buttonC.Enabled = true;
-                    buttonD.Enabled = true;
+                    refreshScreen(1);
+                
                 }
-                else if (options[4] == options[2] && button3WasClicked)
+             else if (options[4] == options[2] && button3WasClicked)
                 {
                     buttonC.BackColor = Color.Green;
                     buttonB.Enabled = false;
                     buttonD.Enabled = false;
                     buttonA.Enabled = false;
                     i++;
+                    waitASecond();              
                     printQuestion();
-                    buttonC.BackColor = Color.Silver;
-                    buttonB.Enabled = true;
-                    buttonA.Enabled = true;
-                    buttonD.Enabled = true;
+                    refreshScreen(2);
                 }
-                else if (options[4] == options[3] && button4WasClicked)
+             else if (options[4] == options[3] && button4WasClicked)
                 {
                     buttonD.BackColor = Color.Green;
                     buttonB.Enabled = false;
                     buttonC.Enabled = false;
                     buttonA.Enabled = false;
                     i++;
+                    waitASecond();
                     printQuestion();
-                    buttonD.BackColor = Color.Silver;
-                    buttonB.Enabled = true;
-                    buttonC.Enabled = true;
-                    buttonA.Enabled = true;
+                    refreshScreen(3);
                 }
-                else if (options[4] != options[3] && button4WasClicked)
+             else if (options[4] != options[3] && button4WasClicked)
                 {
                     buttonD.BackColor = Color.Red;
                     buttonB.Enabled = false;
                     buttonC.Enabled = false;
                     buttonA.Enabled = false;
                 }
-                else if (options[4] != options[2] && button3WasClicked)
+             else if (options[4] != options[2] && button3WasClicked)
                 {
                     buttonC.BackColor = Color.Red;
                     buttonB.Enabled = false;
                     buttonD.Enabled = false;
                     buttonA.Enabled = false;
                 }
-                else if (options[4] != options[1] && button2WasClicked)
+             else if (options[4] != options[1] && button2WasClicked)
                 {
                     buttonB.BackColor = Color.Red;
                     buttonD.Enabled = false;
                     buttonC.Enabled = false;
                     buttonA.Enabled = false;
                 }
-                else
+             else
                 {
                     buttonA.BackColor = Color.Red;
                     buttonB.Enabled = false;
@@ -234,20 +253,15 @@ namespace Bilgisel
                  isCorrectAnswer(Options);
             }
         private void button3_Click(object sender, EventArgs e)
-            {
+        {
                 SetButtonCWasClicked(true);
             isCorrectAnswer(Options);
-            }
-        private void button4_Click(object sender, EventArgs e)
-            {
-                SetButtonDWasClicked(true);
-                isCorrectAnswer(Options);
-            }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            timer = true;
         }
-    }
+        private void button4_Click(object sender, EventArgs e)
+        {
+            SetButtonDWasClicked(true);
+            isCorrectAnswer(Options);
+        }
+    }  
 }
 
