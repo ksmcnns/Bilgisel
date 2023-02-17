@@ -13,22 +13,25 @@ namespace Bilgisel
 {
     public partial class Form1 : Form
     {
-        Form2 frm2 = new Form2();
-        Form4 frm4 = new Form4();
         public Form1()
         {
             InitializeComponent();
         }
+          
         private void button1_Click(object sender, EventArgs e)
-        {            
+        {
+            Form2 frm2 = new Form2();
             this.Hide();
             frm2.Show();
         }
         private void button2_Click(object sender, EventArgs e)
         {
+            Form4 frm4 = new Form4();
             this.Hide();
             frm4.Show();
         }
     }
-}
+}/*
+  *
+  */
 
