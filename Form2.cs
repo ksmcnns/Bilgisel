@@ -10,30 +10,32 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
+using System.Threading;
 
 namespace Bilgisel
 {
     public partial class Form2 : Form
-    {        
-        private List<string> Options;
-        public int[] arr;
+    {
+        
         public Form2()
         {
             InitializeComponent();
             arr = new int[countOfRecords()];
             createArray();
-            Options = printQuestion();           
+            Options = printQuestion();
         }
+        private List<string> Options;
+        public int[] arr;
         private int i = 0;
         private bool button1WasClicked = false;
         private bool button2WasClicked = false;
         private bool button3WasClicked = false;
         private bool button4WasClicked = false;
-        private bool timer = false;
-
+       // private bool timer = false;
         private async void waitASecond()
         {
-            await Task.Delay(2000);        
+            // await Task.Delay(1000);
+            Thread.Sleep(2000);
         }
         private void SetButtonAWasClicked(bool set)
         {
@@ -134,7 +136,6 @@ namespace Bilgisel
             int count = dt.Rows.Count;
             return count;
         }
-
         private void refreshScreen(int x)
         {
             if(x==0)
@@ -174,8 +175,8 @@ namespace Bilgisel
                     buttonB.Enabled = false;
                     buttonC.Enabled = false;
                     buttonD.Enabled = false;
+                    waitASecond();
                     i++;
-                    waitASecond();                 
                     printQuestion();
                     refreshScreen(0);                                
                 }
@@ -185,8 +186,8 @@ namespace Bilgisel
                     buttonD.Enabled = false;
                     buttonC.Enabled = false;
                     buttonA.Enabled = false;
+                    waitASecond();
                     i++;
-                    waitASecond();              
                     printQuestion();
                     refreshScreen(1);
                 
@@ -197,8 +198,8 @@ namespace Bilgisel
                     buttonB.Enabled = false;
                     buttonD.Enabled = false;
                     buttonA.Enabled = false;
+                    waitASecond();
                     i++;
-                    waitASecond();              
                     printQuestion();
                     refreshScreen(2);
                 }
@@ -208,8 +209,8 @@ namespace Bilgisel
                     buttonB.Enabled = false;
                     buttonC.Enabled = false;
                     buttonA.Enabled = false;
-                    i++;
                     waitASecond();
+                    i++;
                     printQuestion();
                     refreshScreen(3);
                 }
